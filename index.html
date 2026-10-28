@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PARKSIWOO FROMM PHOTO &amp; VIDEO ARCHIVE</title>
+<meta name="description" content="PARKSIWOO FROMM PHOTO & VIDEO ARCHIVE — 날짜별 사진과 동영상 아카이브">
+<link rel="stylesheet" href="style.css"><script src="data.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+<header class="top"><a href="./" class="brand">PSW<span>ARCHIVE</span></a><span class="top-note">A COLLECTION OF MOMENTS</span><a href="#collection" class="jump">컬렉션 보기 ↗</a></header>
+<main>
+<section class="intro"><div class="eyebrow"><span class="dot"></span> FROMM ARCHIVE <span class="year">2026 —</span></div><h1>PARKSIWOO<span>FROMM PHOTO &amp; VIDEO</span><em>ARCHIVE</em></h1><div class="intro-bottom"><p>기록된 순간들을, 시간의 순서대로.</p><p id="totals" class="totals"></p></div></section>
+<section id="collection" aria-label="사진 및 동영상 컬렉션">
+<div class="toolbar"><div class="tabs" role="group" aria-label="콘텐츠 종류"><button class="active" data-type="all" aria-pressed="true">ALL <span id="all-count"></span></button><button data-type="photo" aria-pressed="false">PHOTO <span id="photo-count"></span></button><button data-type="video" aria-pressed="false">VIDEO <span id="video-count"></span></button></div><div class="selects"><label><span class="sr-only">월 선택</span><select id="month"><option value="all">모든 달</option></select></label><label><span class="sr-only">정렬 순서</span><select id="sort"><option value="asc">오래된순</option><option value="desc">최신순</option></select></label></div></div>
+<div class="collection-meta"><span id="range"></span><span id="result" aria-live="polite"></span></div><div class="grid" id="grid"></div><p id="empty" hidden>해당하는 기록이 없습니다.</p><button id="more" class="more">더 보기 <span>↓</span></button>
+</section>
+</main><footer><span>PARKSIWOO FROMM PHOTO &amp; VIDEO ARCHIVE</span><a href="#">BACK TO TOP ↑</a></footer>
+<dialog id="viewer" aria-label="사진 및 동영상 확대 보기"><div class="viewer-top"><span id="viewer-kind"></span><button id="close" aria-label="닫기">닫기 ×</button></div><div id="viewer-media"></div><div class="viewer-bottom"><button id="prev" aria-label="이전 항목">←</button><div><p id="viewer-date"></p><span id="viewer-position"></span></div><button id="next" aria-label="다음 항목">→</button></div></dialog>
+</body></html>
